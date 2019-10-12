@@ -11,34 +11,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/switch.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </head>
 <body>
-    <div class="container container-fluid  text-center">
-        
+    <div class="container-fluid  text-center">
 
-        <div class="container keyboard">
-            <div id="" class="key-white c "><span class="text">C</span></div>  
-            <div id="" class="key-white d">D</div>
-            <div id="" class="key-white e">E</div>
-            <div id="" class="key-white f">F</div>
-            <div id="" class="key-white g">G</div>   
-            <div id="" class="key-white a">A</div>   
-            <div id="" class="key-white b">B</div>
-            <div id="" class="key-white c1">C1</div>
+      <!-- switches    -->
+        <div class="container-fluid">
+            <div class="power">
+                <h2 class="text">POWER</h2>
+                <div class="switches  d-flex align-items-center justify-content-center" >
+                    <h2 class="text">Off</h2>
+                    <div class="switch-wrapper1  d-flex align-items-center justify-content-center">
+                        <div class="switch1"></div>
+                    </div>
+                    <h2 class="text">On</h2>
+                </div>
+            </div>
 
-            <div id="" class="key-black c-sharp"></div>
-            <div id="" class="key-black1 d-sharp"></div>
-            <div id="" class="key-black2 f-sharp"></div>
-            <div id="" class="key-black3 g-sharp"></div>
-            <div id="" class="key-black4 a-sharp"></div>
-        </div>
-</div>
+            <div class="power">
+                <h2 class="text">MODE</h2>
+                <div class="switches  d-flex align-items-center justify-content-center" >
+                    <h2 class="text">Piano</h2>
+                    <div class="switch-wrapper2  d-flex align-items-center justify-content-center">
+                        <div class="switch2"></div>
+                    </div>
+                    <h2 class="text">Game</h2>
+                </div>
+            </div>
+       </div>
 
+        <!-- keyboard -->
+        <div class="container container-fluid">
+            <div class="container-fluid keyboard">
+                <button id="c" class="key-white c">C</button>   
+                <button id="d" class="key-white" >B</button>
+                <button id="e" class="key-white">E</button>
+                <button id="f" class="key-white" >F</button>
+                <button id="g" class="key-white">G</button>   
+                <button id="a" class="key-white">A</button>   
+                <button id="h" class="key-white" >B</button>
+                <button id="c1" class="key-white" >C1</button>
+                <button id="d1" class="key-white">D1</button>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script scr="assets/js/script.js"></script>
+                <button id="c-sharp" class="key-black"></button>
+                <button id="d-sharp" class="key-black1"></buttonv>
+                <button id="f-sharp" class="key-black2"></button>
+                <button id="g-sharp" class="key-black3"></button>
+                <button id="a-sharp" class="key-black4"></button>
+                <button id="c1-sharp" class="key-black5"></button>
+            </div>
+        </div> 
+   </div>
+   </div>
+
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/switch.js"></script>
 </body>
 </html>
