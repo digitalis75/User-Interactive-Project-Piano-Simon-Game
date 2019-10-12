@@ -10,11 +10,11 @@
     cursor: pointer;
 }
 
-.switch-wrapper2 {
+.switch-wrapper2, .switch-wrapper3 {
     width: 60px;
     height: 30px;
     /* background-color: ; */
-    border: 2px solid #4d4d4d;
+    border: 1.4px solid #4d4d4d;
     border-radius: 30px;
     font-size: 16px;
     display: inline-block;
@@ -22,8 +22,7 @@
     cursor: pointer;
 }
 
-
-.switch1 {
+.switch1, .switch2, .switch3  {
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -34,26 +33,52 @@
     cursor: pointer;
 }
 
-.switch2 {
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    /* border: 2px solid #4d4d4d; */
-    border-radius: 30px;
-    left: -5px;
-    display: inline-block;
-    position: absolute;
+.start-btn {
+    width: 80px;
+    height: 35px;
+    border: 1px solid #4d4d4d;
+    margin: 0 40px;
     cursor: pointer;
+}
+
+.level {
+    width: auto;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #4d4d4d;
+    margin: 0 15px 0 0;
+    display: inline-block;
+    position: relative;
+   
+}
+
+.faded-green {
+    color: #fff;
+    background-color: green;
+    border: 1px solid green;
+    opacity: 0.5;
 }
 
 .green {
+    color: #fff;
     background-color: green;
-    border: 2px solid green;
+    border: 1px solid green;
 }
 
 .blue {
     background-color: blue;
-    border: 2px solid blue;
+    border: 1px solid blue;
+}
+
+.red {
+    background-color: tomato;
+    border: 1px solid tomato; 
+}
+
+.gold {
+    color: #fff;
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
 }
 
 .text {
@@ -66,4 +91,8 @@
 .power {
     margin: 15px 0;
     display: inline-block; 
+}
+
+.label {
+    margin: 0 5px;
 }
