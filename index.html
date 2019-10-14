@@ -17,9 +17,9 @@
 </head>
 <body>
     <div class="container-fluid  text-center">
-
+   
       <!-- switches    -->
-        <div class="container-fluid">
+        <div class="container-fluid text-center">
             <div class="power">
                 <h2 class="text">POWER</h2>
                 <div class="switches  d-flex align-items-center justify-content-center" >
@@ -41,13 +41,14 @@
                     <h2 class="text">Game</h2>
                 </div>
             </div>
-            
-             <div class="power">
+
+            <div class="power">
                 <button type="button" class="start-btn">Start</button>
             </div>
 
             <div class="power">
-                <div class="level  d-flex align-items-center justify-content-center"><span class="label">Level --</span></div>
+                <div class="level  d-flex align-items-center justify-content-center"><span class="label">Level</span><form id="count">  </form></div>
+                
             </div>
 
             <div class="power">
@@ -60,33 +61,74 @@
                         <h2 class="text">On</h2>
                     </div>
             </div>
-       </div>
+        </div>
 
         <!-- keyboard -->
-        <div class="container container-fluid">
-            <div class="container-fluid keyboard">
-                <button id="c" class="key-white c">C</button>   
-                <button id="d" class="key-white" >B</button>
-                <button id="e" class="key-white">E</button>
-                <button id="f" class="key-white" >F</button>
-                <button id="g" class="key-white">G</button>   
-                <button id="a" class="key-white">A</button>   
-                <button id="h" class="key-white" >B</button>
-                <button id="c1" class="key-white" >C1</button>
-                <button id="d1" class="key-white">D1</button>
+        <div class="container-fluid keyboard text-center">
+            <button id="c" class="key-white ck c">C</button>   
+            <button id="d" class="key-white">B</button>
+            <button id="e" class="key-white">E</button>
+            <button id="f" class="key-white">F</button>
+            <button id="g" class="key-white">G</button>   
+            <button id="a" class="key-white">A</button>   
+            <button id="h" class="key-white">B</button>
+            <button id="c1" class="key-white">C1</button>
+            <button id="d1" class="key-white">D1</button>
 
-                <button id="c-sharp" class="key-black"></button>
-                <button id="d-sharp" class="key-black1"></buttonv>
-                <button id="f-sharp" class="key-black2"></button>
-                <button id="g-sharp" class="key-black3"></button>
-                <button id="a-sharp" class="key-black4"></button>
-                <button id="c1-sharp" class="key-black5"></button>
-            </div>
-        </div> 
-   </div>
-   </div>
+            <button id="c-sharp" class="key-black"></button>
+            <button id="d-sharp" class="key-black1"></button>
+            <button id="f-sharp" class="key-black2"></button>
+            <button id="g-sharp" class="key-black3"></button>
+            <button id="a-sharp" class="key-black4"></button>
+            <button id="c1-sharp" class="key-black5"></button>
+        </div>
+    </div>
 
-   
+    <audio id="audio_1">
+        <source src="assets/audio/C.wav" type = "audio/wav">
+   </audio>
+   <audio id="audio_2">
+        <source src="assets/audio/C_s.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_3">
+        <source src="assets/audio/D.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_4">
+        <source src="assets/audio/D_s.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_5">
+        <source src="assets/audio/E.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_6">
+        <source src="assets/audio/F.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_7">
+        <source src="assets/audio/F_s.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_8">
+        <source src="assets/audio/G.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_9">
+        <source src="assets/audio/G_s.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_10">
+        <source src="assets/audio/A.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_11">
+        <source src="assets/audio/Bb.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_12">
+        <source src="assets/audio/B.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_13">
+        <source src="assets/audio/C1.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_14">
+        <source src="assets/audio/C_s1.wav" type = "audio/wav">
+    </audio>
+    <audio id="audio_15">
+        <source src="assets/audio/D1.wav" type = "audio/wav">
+    </audio>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

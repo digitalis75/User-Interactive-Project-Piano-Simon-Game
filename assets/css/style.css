@@ -25,9 +25,10 @@ body {
     padding-top: 20vw;
     float: left;
     cursor: pointer;
+    z-index: 0;
 }
 
-.key-white.c {
+.key-white.ck {
     margin-left: 16vw;
 }
 
@@ -44,6 +45,7 @@ body {
     border-radius: 0 0 10px 10px;
     float: left;
     cursor: pointer;
+    z-index: 10;
 }
 
 .key-black1 {
@@ -64,4 +66,85 @@ body {
 
 .key-black5 {
     margin-left: -9vw; 
+}
+
+#c{
+    background-color:rgba(248, 161, 161, 0.986); 
+}
+
+#c:active{
+    background-color:rgba(250, 89, 89, 0.986); 
+}
+
+#d{
+    background-color: rgba(248, 179, 161, 0.986);
+}
+
+#d:active{
+    background-color: rgba(253, 113, 78, 0.986);
+}
+
+#e{
+    background-color: rgba(248, 228, 161, 0.986);
+}
+
+#e:active{
+    background-color: rgba(251, 211, 76, 0.986);
+}
+
+#f{
+    background-color: rgba(248, 247, 161, 0.986);
+}
+
+#f:active{
+    background-color: rgba(248, 245, 77, 0.986);
+}
+
+#g{
+    background-color: rgba(228, 248, 161, 0.986);
+}
+
+#g:active{
+    background-color: rgba(207, 246, 80, 0.986);
+}
+
+#a{
+    background-color: rgba(200, 248, 161, 0.986);
+}
+
+#a:active{
+    background-color: rgba(155, 252, 77, 0.986);
+}
+
+#h{
+    background-color: rgba(161, 248, 173, 0.986);
+}
+
+#h:active{
+    background-color: rgba(79, 253, 102, 0.986);
+}
+
+#c1{
+    background-color: rgba(161, 248, 241, 0.986);
+}
+
+#c1:active{
+    background-color: rgba(80, 255, 240, 0.986);
+}
+
+#d1{
+    background-color: rgba(161, 202, 248, 0.986);
+}
+
+#d1:active{
+    background-color: rgba(72, 157, 253, 0.986);
+}
+
+.key-black:active, 
+.key-black1:active, 
+.key-black2:active, 
+.key-black3:active, 
+.key-black4:active, 
+.key-black5:active {
+    background-color: rgb(61, 56, 56);
 }
