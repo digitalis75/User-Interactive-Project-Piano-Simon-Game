@@ -1,6 +1,14 @@
 body {
     background-color: aquamarine;
+}
 
+header {
+    background-color: rgb(8, 151, 130);
+}
+
+div, row, nav, .col, .col-12, .col-6, .col-4, .col-3 {
+    margin:0;
+    padding: 0;
 }
 
 .container {
@@ -12,15 +20,29 @@ body {
     margin: 0;
     padding: 0;
 }
+/* 
+.keyboard {
+    background-color:rgb(8, 151, 130);
+} */
+.switch-bar {
+    border-bottom: 3px solid rgb(8, 151, 130);
+}
 
-
-.key-white {
+.key-white,
+.key-white1,
+.key-white2,
+.key-white3,
+.key-white4,
+.key-white5,
+.key-white6,
+.key-white7,
+.key-white8 {
     width: 7vw;
     height: 30vw;
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 0 0 10px 10px;
-    margin: 2vw 0 5vw;
+    margin: 5vw 0 5vw;
     padding: 0;
     padding-top: 20vw;
     float: left;
@@ -28,16 +50,22 @@ body {
     z-index: 0;
 }
 
-.key-white.ck {
+.key-white {
     margin-left: 16vw;
 }
 
-.key-black, .key-black1, .key-black2, .key-black3, .key-black4, .key-black5  {
+
+.key-black,
+.key-black1,
+.key-black2,
+.key-black3,
+.key-black4,
+.key-black5 {
     width: 4vw;
     height: 20vw;
     z-index: 1;
   
-    margin-top: 2vw;
+    margin-top: 5vw;
     margin-left: -58vw;
 
     background-color: #000;
@@ -49,23 +77,23 @@ body {
 }
 
 .key-black1 {
-    margin-left: -51vw;
+    margin-left: 3vw;
 }
 
 .key-black2 {
-    margin-left: -37vw; 
+    margin-left: 10vw; 
 }
 
 .key-black3 {
-    margin-left: -30vw; 
+    margin-left: 3vw; 
 }
 
 .key-black4 {
-    margin-left: -23vw; 
+    margin-left: 3vw; 
 }
 
 .key-black5 {
-    margin-left: -9vw; 
+    margin-left: 10vw; 
 }
 
 #c{
@@ -148,3 +176,59 @@ body {
 .key-black5:active {
     background-color: rgb(61, 56, 56);
 }
+
+.how-rules {
+    margin: 10px;
+    background-color: rgb(175, 245, 220);
+    border: 1px solid #860aec;
+}
+
+.how_piano, .how_game {
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(127, 255, 212);
+    align-items: center;
+    /* display: inline-block; */
+    border: 1px solid #4d4d4d;
+    margin: 15px auto;
+    display: block;  
+}
+
+.how-active {
+    background-color: rgba(161, 202, 248, 0.986);
+    border: 1px solid #860aec;  
+}
+
+
+.links,
+.social-links {
+    background-color: rgb(8, 151, 130);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.links a,
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 17px;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+
+.social-links a:hover,
+.links a:hover {
+    color: rgb(201, 201, 201);
+}
+
+.social-links a {
+    color: #fff;
+}
+
+
+

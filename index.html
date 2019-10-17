@@ -16,42 +16,73 @@
     
 </head>
 <body>
-    <div class="container-fluid  text-center">
-   
+<header>
+        <div class="container-fluid">
+            <nav class=" navbar navbar-nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="index.html"><img class="logo" src="assets/images/m-logo.png" alt=""> -->
+                Learn to Play Piano</a>
+
+               
+    
+                <div class="navbar-collapse collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="index.html">Home<span class="sr-only ">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="band.html"><span>About</span></a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
       <!-- switches    -->
-        <div class="container-fluid text-center">
-            <div class="power">
-                <h2 class="text">POWER</h2>
-                <div class="switches  d-flex align-items-center justify-content-center" >
-                    <h2 class="text">Off</h2>
-                    <div class="switch-wrapper1  d-flex align-items-center justify-content-center">
-                        <div class="switch1"></div>
+    <div class="container-fluid text-center switch">
+        <div class = 'row'>
+            <div class="col-6 col-md-3">
+                <div class="power">
+                    <h2 class="text">POWER</h2>
+                    <div class="switches  d-flex align-items-center justify-content-center" >
+                        <h2 class="text">Off</h2>
+                        <div class="switch-wrapper1  d-flex align-items-center justify-content-center">
+                            <div class="switch1"></div>
+                        </div>
+                        <h2 class="text">On</h2>
                     </div>
-                    <h2 class="text">On</h2>
                 </div>
             </div>
-
-            <div class="power">
-                <h2 class="text">MODE</h2>
-                <div class="switches  d-flex align-items-center justify-content-center" >
-                    <h2 class="text">Piano</h2>
-                    <div class="switch-wrapper2  d-flex align-items-center justify-content-center">
-                        <div class="switch2"></div>
+            <div class="col-6 col-md-2">
+                <div class="power">
+                    <h2 class="text">MODE</h2>
+                    <div class="switches  d-flex align-items-center justify-content-center" >
+                        <h2 class="text">Piano</h2>
+                        <div class="switch-wrapper2  d-flex align-items-center justify-content-center">
+                            <div class="switch2"></div>
+                        </div>
+                        <h2 class="text">Game</h2>
                     </div>
-                    <h2 class="text">Game</h2>
                 </div>
             </div>
-
-            <div class="power">
-                <button type="button" class="start-btn">Start</button>
+            <div class="col-4 col-md-2">
+                <div class="power">
+                    <button type="button" class="start-btn">Start</button>
+                </div>
             </div>
-
-            <div class="power">
-                <div class="level  d-flex align-items-center justify-content-center"><span class="label">Level</span><form id="count">  </form></div>
-                
+            <div class="col-4 col-md-2">
+                <div class="power">
+                    <div class="level  d-flex align-items-center justify-content-center"><span class="label">Level</span><form id="count">  </form></div>                               
+                </div>
             </div>
-
-            <div class="power">
+            <div class="col-4 col-md-3">
+                <div class="power">
                     <h2 class="text">STRICT</h2>
                     <div class="switches  d-flex align-items-center justify-content-center" >
                         <h2 class="text">Off</h2>
@@ -60,20 +91,23 @@
                         </div>
                         <h2 class="text">On</h2>
                     </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!-- keyboard -->
-        <div class="container-fluid keyboard text-center">
-            <button id="c" class="key-white ck c">C</button>   
-            <button id="d" class="key-white">B</button>
-            <button id="e" class="key-white">E</button>
-            <button id="f" class="key-white">F</button>
-            <button id="g" class="key-white">G</button>   
-            <button id="a" class="key-white">A</button>   
-            <button id="h" class="key-white">B</button>
-            <button id="c1" class="key-white">C1</button>
-            <button id="d1" class="key-white">D1</button>
+    <!-- keyboard -->
+    <div class="container-fluid keyboard">
+        <div class = 'row'>
+            <button id="c" class="key-white">C</button>   
+            <button id="d" class="key-white1">D</button>
+            <button id="e" class="key-white2">E</button>
+            <button id="f" class="key-white3">F</button>
+            <button id="g" class="key-white4">G</button>   
+            <button id="a" class="key-white5">A</button>   
+            <button id="h" class="key-white6">B</button>
+            <button id="c1" class="key-white7">C1</button>
+            <button id="d1" class="key-white8">D1</button>
 
             <button id="c-sharp" class="key-black"></button>
             <button id="d-sharp" class="key-black1"></button>
@@ -83,6 +117,69 @@
             <button id="c1-sharp" class="key-black5"></button>
         </div>
     </div>
+        
+    <div class = 'container-fluid'>
+        <div class = 'row'>
+            <div class = 'col-12 col-md-6'>
+                <button class="how_piano" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                    How to Play Keyboard
+                </button>
+   
+                <div class="collapse" id="collapseExample1">
+                    <div class="card card-body how-rules">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
+            
+            <div class = 'col-12 col-md-6'>
+                <button class="how_game" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    How to Play Game
+                </button>
+            
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body how-rules">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="links">
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="about.html"><span>About</span></a></li>                            
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span> 
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span> 
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">Youtube</span> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <audio id="audio_1">
         <source src="assets/audio/C.wav" type = "audio/wav">
