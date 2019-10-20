@@ -18,30 +18,32 @@
 <body>
 <header>
         <div class="container-fluid">
-            <nav class=" navbar navbar-nav">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- <a class="navbar-brand" href="index.html"><img class="logo" src="assets/images/m-logo.png" alt=""> -->
-                Learn to Play Piano</a>
+            <div class="row header">
+                <nav class=" navbar navbar-nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="index.html"><img class="logo" src="assets/images/m-logo.png" alt=""> -->
+                    Learn to Play Piano</a>
 
-               
-    
-                <div class="navbar-collapse collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link active" href="index.html">Home<span class="sr-only ">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="band.html"><span>About</span></a>
-                        </li>
-                       
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                
+        
+                    <div class="navbar-collapse collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="index.html">Home<span class="sr-only ">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="band.html"><span>About</span></a>
+                            </li>
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>    
         </div>
     </header>
       <!-- switches    -->
@@ -59,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-md-3">
                 <div class="power">
                     <h2 class="text">MODE</h2>
                     <div class="switches  d-flex align-items-center justify-content-center" >
@@ -76,12 +78,12 @@
                     <button type="button" class="start-btn">Start</button>
                 </div>
             </div>
-            <div class="col-4 col-md-2">
+            <div class="col-3 col-md-2">
                 <div class="power">
-                    <div class="level  d-flex align-items-center justify-content-center"><span class="label">Level</span><form id="count">  </form></div>                               
+                    <div class="level"><span class="label">Level</span><form id="count">  </form></div>                               
                 </div>
             </div>
-            <div class="col-4 col-md-3">
+            <div class="col-5 col-md-2">
                 <div class="power">
                     <h2 class="text">STRICT</h2>
                     <div class="switches  d-flex align-items-center justify-content-center" >
@@ -99,7 +101,7 @@
     <!-- keyboard -->
     <div class="container-fluid keyboard">
         <div class = 'row'>
-            <button id="c" class="key-white">C</button>   
+            <button id="c" class="key-white c">C</button>   
             <button id="d" class="key-white1">D</button>
             <button id="e" class="key-white2">E</button>
             <button id="f" class="key-white3">F</button>
@@ -127,7 +129,15 @@
    
                 <div class="collapse" id="collapseExample1">
                     <div class="card card-body how-rules">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <ol>
+                            <li>To power-on the keyboard slide the 'POWER' switch to the right from 'Off' to 'On' position.
+                                <br><img class = 'power-img' src='assets/images/power-off.png'><img class = 'power-img' src='assets/images/power-on.png'>
+                            </li>
+                            <li>The 'MODE' switch will stay in default 'Piano' position.
+                                <br><img class = 'power-img' src='assets/images/mode-piano.png'>
+                            </li>
+                            <li>To play keyboard click the piano keys with a mouse.</li>
+                        </ol>                         
                     </div>
                 </div>
             </div>
@@ -139,7 +149,24 @@
             
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body how-rules">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <ol>
+                            <li>Power-on the keyboard by sliding the 'POWER' switch to the right from 'Off' to 'On' position.
+                                <br><img class = 'power-img' src='assets/images/power-off.png'><img class = 'power-img' src='assets/images/power-on.png'>
+                            </li>
+                            <li>To play the game slide the 'MODE' switch to the right from 'Piano' to 'Game' position.
+                                <br>The 'MODE' switch will change the colour from gray to blue.
+                                <br><img class = 'power-img' src='assets/images/mode-piano.png'><img class = 'power-img' src='assets/images/mode-game.png'>
+                            </li>
+                            <li>In a 'Game'position the 'Start' button will change the colour from gray to faded green.
+                                <br><img class = 'start-img' src='assets/images/start1.png'><img class = 'start-img' src='assets/images/start2.png'>
+                                <br>The 'Level' button will change colour to golden yellow.
+                                <br><img class = 'level-img' src='assets/images/level1.png'><img class = 'level-img' src='assets/images/level2.png'>
+                            </li>
+                            <li>To start the game click the 'Start' button. The 'Start' button will change colour to green.
+                                <br>The 'Level' button will indicate beginning of the level one.
+                                <br><img class = 'start-img' src='assets/images/start3.png'><img class = 'start-img' src='assets/images/level3.png'> 
+                            </li>
+                        </ol> 
                     </div>
                 </div>
             </div>
@@ -232,5 +259,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/switch.js"></script>
+    <script src="assets/js/game.js"></script>
 </body>
 </html>

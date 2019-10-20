@@ -2,11 +2,7 @@ body {
     background-color: aquamarine;
 }
 
-header {
-    background-color: rgb(8, 151, 130);
-}
-
-div, row, nav, .col, .col-12, .col-6, .col-4, .col-3 {
+html,.col-12 {
     margin:0;
     padding: 0;
 }
@@ -20,10 +16,11 @@ div, row, nav, .col, .col-12, .col-6, .col-4, .col-3 {
     margin: 0;
     padding: 0;
 }
-/* 
-.keyboard {
-    background-color:rgb(8, 151, 130);
-} */
+
+.header {
+    background-color: rgb(8, 151, 130);
+}
+
 .switch-bar {
     border-bottom: 3px solid rgb(8, 151, 130);
 }
@@ -39,7 +36,7 @@ div, row, nav, .col, .col-12, .col-6, .col-4, .col-3 {
 .key-white8 {
     width: 7vw;
     height: 30vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     border: 1px solid #000;
     border-radius: 0 0 10px 10px;
     margin: 5vw 0 5vw;
@@ -51,9 +48,41 @@ div, row, nav, .col, .col-12, .col-6, .col-4, .col-3 {
 }
 
 .key-white {
-    margin-left: 16vw;
+    background-color:rgba(248, 161, 161, 0.986);
+    margin-left: 16vw; 
 }
 
+.key-white1 {
+    background-color: rgba(248, 179, 161, 0.986);
+}
+
+.key-white2 {
+    background-color: rgba(248, 228, 161, 0.986);
+}
+
+.key-white3 {
+    background-color: rgba(248, 247, 161, 0.986);
+}
+
+.key-white4 {
+    background-color: rgba(228, 248, 161, 0.986);
+}
+
+.key-white5 {
+    background-color: rgba(200, 248, 161, 0.986);
+}
+
+.key-white6 {
+    background-color: rgba(161, 248, 173, 0.986);
+}
+
+.key-white7 {
+    background-color: rgba(161, 248, 241, 0.986);
+}
+
+.key-white8 {
+    background-color: rgba(161, 202, 248, 0.986);
+}
 
 .key-black,
 .key-black1,
@@ -96,91 +125,49 @@ div, row, nav, .col, .col-12, .col-6, .col-4, .col-3 {
     margin-left: 10vw; 
 }
 
-#c{
-    background-color:rgba(248, 161, 161, 0.986); 
-}
-
-#c:active{
+.lit1{
     background-color:rgba(250, 89, 89, 0.986); 
 }
 
-#d{
-    background-color: rgba(248, 179, 161, 0.986);
-}
-
-#d:active{
+.lit2{
     background-color: rgba(253, 113, 78, 0.986);
 }
 
-#e{
-    background-color: rgba(248, 228, 161, 0.986);
-}
-
-#e:active{
+.lit3{
     background-color: rgba(251, 211, 76, 0.986);
 }
-
-#f{
-    background-color: rgba(248, 247, 161, 0.986);
-}
-
-#f:active{
+.lit4{
     background-color: rgba(248, 245, 77, 0.986);
 }
 
-#g{
-    background-color: rgba(228, 248, 161, 0.986);
-}
-
-#g:active{
+.lit5{
     background-color: rgba(207, 246, 80, 0.986);
 }
 
-#a{
-    background-color: rgba(200, 248, 161, 0.986);
-}
-
-#a:active{
+.lit6{
     background-color: rgba(155, 252, 77, 0.986);
 }
 
-#h{
-    background-color: rgba(161, 248, 173, 0.986);
-}
-
-#h:active{
+.lit7{
     background-color: rgba(79, 253, 102, 0.986);
 }
 
-#c1{
-    background-color: rgba(161, 248, 241, 0.986);
-}
-
-#c1:active{
+.lit8{
     background-color: rgba(80, 255, 240, 0.986);
 }
 
-#d1{
-    background-color: rgba(161, 202, 248, 0.986);
-}
-
-#d1:active{
+.lit9{
     background-color: rgba(72, 157, 253, 0.986);
 }
-
-.key-black:active, 
-.key-black1:active, 
-.key-black2:active, 
-.key-black3:active, 
-.key-black4:active, 
-.key-black5:active {
-    background-color: rgb(61, 56, 56);
+    
+.lit{
+    background-color: rgb(187, 178, 178);
 }
 
 .how-rules {
-    margin: 10px;
     background-color: rgb(175, 245, 220);
     border: 1px solid #860aec;
+    margin: 0 2px 5px;
 }
 
 .how_piano, .how_game {
@@ -198,6 +185,17 @@ div, row, nav, .col, .col-12, .col-6, .col-4, .col-3 {
 .how-active {
     background-color: rgba(161, 202, 248, 0.986);
     border: 1px solid #860aec;  
+}
+
+.power-img {
+    width: 100px;
+    height: 50px;
+    margin: 0 15px;
+}
+
+.level-img,
+.start-img {
+    margin: 0 15px;
 }
 
 
@@ -229,6 +227,3 @@ div, row, nav, .col, .col-12, .col-6, .col-4, .col-3 {
 .social-links a {
     color: #fff;
 }
-
-
-
