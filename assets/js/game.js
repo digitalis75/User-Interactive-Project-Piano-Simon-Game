@@ -1,10 +1,35 @@
 var random = [];
-var litID = []; 
-var clicked = [];
+var gameSeq = []; 
+var userSeq = [];
 var j = 0;
 var count = 1;
-var i, on, off, strict, x;
+var color, id;
+var i, on, off, gameInterval;
+const num_of_levels = 5;
 
+var keyId = ["c", "c-sharp", "d", "d-sharp", "e", "f", "f-sharp", "g", "g-sharp", "a", "a-sharp", "h", "c1", "c1-sharp", "d1", "d1-sharp"];
+var keySound = ["audio/C.wav", "audio/C_s.wav", "audio/D.wav", "audio/D_s.wav", "audio/E.wav", "audio/F.wav", "audio/F_s.wav", "audio/G.wav", "audio/G_s.wav", "audio/A.wav", "audio/Bb.wav", "audio/B.wav", "audio/C1.wav", "audio/C_s1.wav", "audio/D1.wav"];
+
+var play_c = new Audio(keySound[0]);
+var play_c_sharp = new Audio(keySound[1]);
+var play_d = new Audio(keySound[2]);
+var play_d_sharp = new Audio(keySound[3]);
+var play_e = new Audio(keySound[4]);
+var play_f = new Audio(keySound[5]);
+var play_f_sharp = new Audio(keySound[6]);
+var play_g = new Audio(keySound[7]);
+var play_g_sharp = new Audio(keySound[8]);
+var play_a = new Audio(keySound[9]);
+var play_a_sharp = new Audio(keySound[10]);
+var play_h = new Audio(keySound[11]);
+var play_c1 = new Audio(keySound[12]);
+var play_c1_sharp = new Audio(keySound[13]);
+var play_d1 = new Audio(keySound[14]);
+
+var error = new Audio("audio/beep-03.mp3");
+var winner = new Audio("audio/happykids.mp3");
+
+//game's function
 function change1() {
     if (count <=10) {
         off = 400;
@@ -14,510 +39,265 @@ function change1() {
         on = 500;
     }
 
-
-//game's random pattern
-    x = setInterval(function(){
+    gameInterval = setInterval(function(){
         if (random[j] == 1) {
-            $('#c').addClass('lit1');
-            $('#audio_1')[0].play();
-            litID.push(1);
-    
+            $('#c').addClass('key-c-active');
+            play_c.currentTime = 0;
+            play_c.play();
+
+            gameSeq.push(1);
+
             setTimeout(function() {
-                $('#c').removeClass('lit1');
+                $('#c').removeClass('key-c-active');
             },off);
+            
+         
         }
         else if (random[j] == 2) {
-            // lit = 'key-black:active'
-            $('#c-sharp').addClass('lit');
-            $('#audio_2')[0].play();
-            litID.push(2);
+            $('#c-sharp').addClass('key-black-active');
+            play_c_sharp.currentTime = 0;
+            play_c_sharp.play();
+
+            gameSeq.push(2);
     
             setTimeout(function() {
-                $('#c-sharp').removeClass('lit');
+                $('#c-sharp').removeClass('key-black-active');
             },off);
+   
         }
 
         else if (random[j] == 3) {
-            // lit = 'key-white1:active'
-            $('#d').addClass('lit2');
-            $('#audio_3')[0].play();
-            litID.push(3);
+            $('#d').addClass('key-d-active');
+            play_d.currentTime = 0;
+            play_d.play();
+            gameSeq.push(3);
     
             setTimeout(function() {
-                $('#d').removeClass('lit2');
+                $('#d').removeClass('key-d-active');
             },off);
+          
         }
 
         else if (random[j] == 4) {
-            lit = 'key-black1:active'
-            $('#d-sharp').addClass('lit');
-            $('#audio_4')[0].play();
-            litID.push(4);
+            $('#d-sharp').addClass('key-black-active');
+            play_d_sharp.currentTime = 0;
+            play_d_sharp.play();
+            gameSeq.push(4);
     
             setTimeout(function() {
-                $('#d-sharp').removeClass('lit');
+                $('#d-sharp').removeClass('key-black-active');
             },off);
+          
         }
 
         else if (random[j] == 5) {
-            // lit = 'key-white2:active'
-            $('#e').addClass('lit3');
-            $('#audio_5')[0].play();
-            litID.push(5);
+            $('#e').addClass('key-e-active');
+            play_e.currentTime = 0;
+            play_e.play();
+            gameSeq.push(5);
     
             setTimeout(function() {
-                $('#e').removeClass('lit3');
+                $('#e').removeClass('key-e-active');
             },off);
+           
         }
 
         else if (random[j] == 6) {
-            // lit = 'key-white3:active'
-            $('#f').addClass('lit4');
-            $('#audio_6')[0].play();
-            litID.push(6);
+            $('#f').addClass('key-f-active');
+            play_f.currentTime = 0;
+            play_f.play();
+            gameSeq.push(6);
     
             setTimeout(function() {
-                $('#f').removeClass('lit4');
+                $('#f').removeClass('key-f-active');
             },off);
+           
         }
 
         else if (random[j] == 7) {
-            // lit = 'key-black2:active'
-            $('#f-sharp').addClass('lit');
-            $('#audio_7')[0].play();
-            litID.push(7);
+            $('#f-sharp').addClass('key-black-active');
+            play_f_sharp.currentTime = 0;
+            play_f_sharp.play();
+            gameSeq.push(7);
     
             setTimeout(function() {
-                $('#f-sharp').removeClass('lit');
+                $('#f-sharp').removeClass('key-black-active');
             },off);
+          
         }
 
         else if (random[j] == 8) {
-            // lit = 'key-white4:active'
-            $('#g').addClass('lit5');
-            $('#audio_8')[0].play();
-            litID.push(8);
+            $('#g').addClass('key-g-active');
+            play_g.currentTime = 0;
+            play_g.play();
+            gameSeq.push(8);
     
             setTimeout(function() {
-                $('#g').removeClass('lit5');
+                $('#g').removeClass('key-g-active');
             },off);
         }
 
         else if (random[j] == 9) {
-            // lit = 'key-black3:active'
-            $('#g-sharp').addClass('lit');
-            $('#audio_9')[0].play();
-            litID.push(9);
+            $('#g-sharp').addClass('key-black-active');
+            play_g_sharp.currentTime = 0;
+            play_g_sharp.play();
+            gameSeq.push(9);
     
             setTimeout(function() {
-                $('#g-sharp').removeClass('lit');
+                $('#g-sharp').removeClass('key-black-active');
             },off);
         }
 
         else if (random[j] == 10) {
-            // lit = 'key-white5:active'
-            $('#a').addClass('lit6');
-            $('#audio_10')[0].play();
-            litID.push(10);
+            $('#a').addClass('key-a-active');
+            play_a.currentTime = 0;
+            play_a.play();
+            gameSeq.push(10);
     
             setTimeout(function() {
-                $('#a').removeClass('lit6');
+                $('#a').removeClass('key-a-active');
             },off);
         }
 
         else if (random[j] == 11) {
-            // lit = 'key-black4:active'
-            $('#a-sharp').addClass('lit');
-            $('#audio_11')[0].play();
-            litID.push(11);
+            $('#a-sharp').addClass('key-black-active');
+            play_a_sharp.currentTime = 0;
+            play_a_sharp.play();
+            gameSeq.push(11);
     
             setTimeout(function() {
-                $('#a-sharp').removeClass('lit');
+                $('#a-sharp').removeClass('key-black-active');
             },off);
         }
 
         else if (random[j] == 12) {
-            // lit = 'key-white6:active'
-            $('#h').addClass('lit7');
-            $('#audio_12')[0].play();
-            litID.push(12);
+            $('#h').addClass('key-h-active');
+            play_h.currentTime = 0;
+            play_h.play();
+            gameSeq.push(12);
     
             setTimeout(function() {
-                $('#h').removeClass('lit7');
+                $('#h').removeClass('key-h-active');
             },off);
         }
 
         else if (random[j] == 13) {
-            // lit = 'key-white7:active'
-            $('#c1').addClass('lit8');
-            $('#audio_13')[0].play();
-            litID.push(13);
+            $('#c1').addClass('key-c1-active');
+            play_c.currentTime = 0;
+            play_c1.play();
+            gameSeq.push(13);
     
             setTimeout(function() {
-                $('#c1').removeClass('lit8');
+                $('#c1').removeClass('key-c1-active');
             },off);
         }
 
         else if (random[j] == 14) {
-            // lit = 'key-black5:active'
-            $('#c1-sharp').addClass('lit');
-            $('#audio_14')[0].play();
-            litID.push(14);
+            $('#c1-sharp').addClass('key-black-active');
+            play_c1_sharp.currentTime = 0;
+            play_c1_sharp.play();
+            gameSeq.push(14);
     
             setTimeout(function() {
-                $('#c1-sharp').removeClass('lit');
+                $('#c1-sharp').removeClass('key-black-active');
             },off);       
         }
 
         else{
-            // lit = 'key-white8:active'
-            $('#d1').addClass('lit9');
-            $('#audio_15')[0].play();
-            litID.push(15);
+            $('#d1').addClass('key-d1-active');
+            play_d1.currentTime = 0;
+            play_d1.play();
+            gameSeq.push(15);
     
             setTimeout(function() {
-                $('#d1').removeClass('lit9');
+                $('#d1').removeClass('key-d1-active');
             },off);
         }
     
         j++;     
         if (j>=count) {
-            clearInterval(x);  
+            clearInterval(gameInterval);  
         }
     }, on);
 }
 
 function checking() {
-    if (litID.length == clicked.length) {
-        if (litID.join() == clicked.join()){
-            if(count == 20) {
+    if (gameSeq.length == userSeq.length) {
+        if (gameSeq.join() == userSeq.join()){
+            if(count == num_of_levels) {
                 setTimeout (function () {
-                    alert ('You won!');
-                    location.reload();
+                    $(".label").text("YOU WON");
+                    $("#count").text("!!!");
+                    winner.play();
                 }, 1000);
+                setTimeout (function () {
+                    location.reload();
+               }, 5000);
             }else {
                 setTimeout (function () {
                     $('#count').text (count + 1);
                     count++;
-                    litID = [];
-                    clicked = [];
+                    gameSeq = [];
+                    userSeq = [];
                     j = 0;
                     change1();
-                }, 1000);
+                }, 500);
             }
         }else {
-            if (strict == 1) {
-                location.reload();
-            } else {
-                setTimeout (function () {
-                    $('#count').text('!!!');
-                    $('#audio_16')[0].play();
+            setTimeout (function () {
+                $('#count').text('!!!');
+                error.play();
 
-                    litID = [];
-                    clicked = [];
-                    j = 0;
-                    change1();
-                }, 1000);
-            }
+                gameSeq = [];
+                userSeq = [];
+                j = 0;
+                change1();
+            }, 1000);
         }  
     }
 }
 
-//switch On/Off
-$(document).ready(function(){  
-    $('.switch-wrapper1').click(function() {
-        
-        if($('.switch1').css('left') == '-5px'){
-            $('.switch1').animate({
-                left: '30px'
-            }, 500);
-            $('.switch-wrapper1').addClass('green');
-           
-           // play keyboard
-            playKeyboard();
-            
-        }else{
-            // $('.switch1').animate({
-            //  left: '-5px'
-            // }, 500);           
-            // $('.switch-wrapper1').removeClass('green');
-
-        //     $('.switch2').animate({
-        //         left: '-5px',
-        //     }, 500);
-
-        //     $('.switch-wrapper2').removeClass('blue');
-        //     $('.start-btn').removeClass('faded-green green');
-        //    // $('.start-btn').removeClass('green');
-        //     $('.level').removeClass('gold');
-        //     $('#count').text(' '); 
-            location.reload();
-        }   
-    });
-}); 
-
-//switch piano/game mode
 $(document).ready(function(){
-    $('.switch-wrapper2').click(function() {
-        if($('.switch1').css('left') == '30px' && $('.switch2').css('left') == '-5px'){
-            $('.switch2').animate({
-            left: '30px',
-            }, 500);
-            $('.switch-wrapper2').addClass('blue');
-            
-            $('.start-btn').addClass('faded-green');
-            $('.level').addClass('gold');
-            $('#count').text('--');
-            
-        }else{
-            // $('.switch2').animate({
-            // left: '-5px',
-            // }, 500);
-            // $('.switch-wrapper2').removeClass('blue');
-
-        //     //disactivate start and level buttons
-        //     $('.start-btn').removeClass('faded-green green');
-        //     $('.level').removeClass('gold');
-
-        //    //disactivate strict switch     
-        //     $('.switch3').animate({
-        //         left: '-5px',
-        //     }, 500);
-        //     $('.switch-wrapper3').removeClass('red');
-
-        //     $('.switch3').css('left') == '-5px';          
-        //     $('#count').text(' '); 
-
-            location.reload();
-    
-        }
-    });
+    $('#count').text('--');
 });
 
 
-  
 //start botton
 $(document).ready(function(){   
     $('.start-btn').click(function(){
-        if($('.switch1').css('left') == '30px' && $('.switch2').css('left') == '30px'){
-            $('.start-btn').removeClass('faded-green').addClass('green');      
-            
-            for (i=0; i<20; i++) {
-                random[i] = Math.ceil(Math.random()*15);
-            }
+        $('.start-btn').removeClass('faded-green').addClass('green');      
+        $('#count').text(count);
 
-            $('#count').text(count);
+        for (i=0; i<20; i++) {
+            random[i] = Math.ceil(Math.random()*15);
+        }
 
-            change1();
-              
-            //user plays
-            $('#c').click(function(){
-                $('#c').addClass('lit1');
-                $('#audio_1')[0].play();
+        change1();
 
-                clicked.push(1);
-
-                setTimeout(function(){
-                    $('#c').removeClass('lit1');
-                }, 250);
-                checking();
-            });
-
-            $('#c-sharp').click(function(){
-                $('#c-sharp').addClass('lit');
-                $('#audio_2')[0].play();
-
-                clicked.push(2);
-
-                setTimeout(function(){
-                    $('#c-sharp').removeClass('lit');
-                }, 250);
-                checking();          
-            });
-
-            $('#d').click(function(){
-                $('#d').addClass('lit2');
-                $('#audio_3')[0].play();
-
-                clicked.push(3);
-
-                setTimeout(function(){
-                    $('#d').removeClass('lit2');
-                }, 250);
-                checking();
-            });
-
-            $('#d-sharp').click(function(){
-                $('#d-sharp').addClass('lit');
-                $('#audio_4')[0].play();
-
-                clicked.push(4);
-
-                setTimeout(function(){
-                    $('#d-sharp').removeClass('lit');
-                }, 250);
-                checking();          
-            });
-            
-            $('#e').click(function(){
-                $('#e').addClass('lit3');
-                $('#audio_5')[0].play();
-
-                clicked.push(5);
-
-                setTimeout(function(){
-                    $('#e').removeClass('lit3');
-                }, 250);
-                checking();
-            });
-
-            $('#f').click(function(){
-                $('#f').addClass('lit4');
-                $('#audio_6')[0].play();
-
-                clicked.push(6);
-
-                setTimeout(function(){
-                    $('#f').removeClass('lit4');
-                }, 250);
-                checking();
-            });
-
-            $('#f-sharp').click(function(){
-                $('#f-sharp').addClass('lit');
-                $('#audio_7')[0].play();
-
-                clicked.push(7);
-
-                setTimeout(function(){
-                    $('#f-sharp').removeClass('lit');
-                }, 250);
-                checking();          
-            });
-
-            $('#g').click(function(){
-                $('#g').addClass('lit5');
-                $('#audio_8')[0].play();
-
-                clicked.push(8);
-
-                setTimeout(function(){
-                    $('#g').removeClass('lit5');
-                }, 250);
-                checking();
-            });
-
-            $('#g-sharp').click(function(){
-                $('#g-sharp').addClass('lit');
-                $('#audio_9')[0].play();
-
-                clicked.push(9);
-
-                setTimeout(function(){
-                    $('#g-sharp').removeClass('lit');
-                }, 250);
-                checking();          
-            });
-
-            $('#a').click(function(){
-                $('#a').addClass('lit6');
-                $('#audio_10')[0].play();
-
-                clicked.push(10);
-
-                setTimeout(function(){
-                    $('#a').removeClass('lit6');
-                }, 250);
-                checking();
-            });
-
-            $('#a-sharp').click(function(){
-                $('#a-sharp').addClass('lit');
-                $('#audio_11')[0].play();
-
-                clicked.push(11);
-
-                setTimeout(function(){
-                    $('#a-sharp').removeClass('lit');
-                }, 250);
-                checking();          
-            });
-
-            $('#h').click(function(){
-                $('#h').addClass('lit7');
-                $('#audio_12')[0].play();
-
-                clicked.push(12);
-
-                setTimeout(function(){
-                    $('#h').removeClass('lit7');
-                }, 250);
-                checking();
-            });
-
-            $('#c1').click(function(){
-                $('#c1').addClass('lit8');
-                $('#audio_13')[0].play();
-
-                clicked.push(13);
-
-                setTimeout(function(){
-                    $('#c1').removeClass('lit8');
-                }, 250);
-                checking();
-            });
-
-            $('#c1-sharp').click(function(){
-                $('#c1-sharp').addClass('lit');
-                $('#audio_14')[0].play();
-
-                clicked.push(14);
-
-                setTimeout(function(){
-                    $('#c1-sharp').removeClass('lit');
-                }, 250);
-                checking();          
-            });
-
-            $('#d1').click(function(){
-                $('#d1').addClass('lit9');
-                $('#audio_15')[0].play();
-
-                clicked.push(15);
-
-                setTimeout(function(){
-                    $('#d1').removeClass('lit9');
-                }, 250);
-                checking();
-            });
-            
-
-
-           //activate strict switch     
-            $('.switch-wrapper3').click(function() {
-                if($('.switch3').css('left') == '-5px'){
-                    $('.switch3').animate({
-                    left: '30px',
-                    }, 500);
-                    $('.switch-wrapper3').addClass('red');
-                    strict = 1;
-                    $('#count').text(count);
-                    change1(); 
-                    
-
-                }else{         
-                    $('.switch3').animate({
-                        left: '-5px',
-                    }, 500);
-                    $('.switch-wrapper3').removeClass('red');   
-                }                 
-            });                          
-        }else{
-           
-        } 
-    });      
+        //user sequence 
+        $(".keyWhite, .keyBlack").click(function(){          
+            var key = $(this).attr("id");
+            var id = keyId.indexOf(key);
+            color = $(this).attr("class").split(" ")[1];
+            userSeq.push(id +1); 
+            // console.log(key +" " + color);
+            addColorSound(id, color);
+            checking();
+        });     
+    });
 });
 
+//add color and sound
+function addColorSound(id, color) {
+    $("#"+ keyId[id]).addClass(color + "-active");
+    playSound(id);
+    setTimeout(function(){
+        $("#" + keyId[id]).removeClass(color + "-active");
+    }, 500);
+}
 
-
-
+//plays sound
+function playSound(id){
+    var sound = new Audio(keySound[id]);
+    sound.play();
+}

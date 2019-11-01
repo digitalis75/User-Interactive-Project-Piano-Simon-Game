@@ -1,40 +1,5 @@
-.switch-wrapper1 {
-    width: 40px;
-    height: 20px;
-    background-color: #4d4d4d;
-    border: 2px solid #4d4d4d;
-    border-radius: 20px;
-    font-size: 16px;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-}
-
-.switch-wrapper2, .switch-wrapper3 {
-    width: 40px;
-    height: 20px;
-    border: 1.4px solid #4d4d4d;
-    border-radius: 20px;
-    font-size: 16px;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-
-}
-
-.switch1, .switch2, .switch3  {
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border-radius: 20px;
-    left: -5px;
-    display: inline-block;
-    position: absolute;
-    cursor: pointer;
-}
-
 .start-btn {
-    width: 80px;
+    width: 150px;
     height: 35px;
     border: 1px solid #4d4d4d;
     margin: 0 20px;
@@ -42,7 +7,7 @@
 }
 
 .level {
-    width: 70px;
+    width: 105px;
     height: 35px;
     border-radius: 10px;
     border: 1px solid #4d4d4d;
@@ -65,16 +30,6 @@
     border: 1px solid green;
 }
 
-.blue {
-    background-color: blue;
-    border: 1px solid blue;
-}
-
-.red {
-    background-color: tomato;
-    border: 1px solid tomato; 
-}
-
 .gold {
     color: #fff;
     background-color: goldenrod;
@@ -92,7 +47,6 @@
     padding: 0;
     margin: 10px 0;
     text-align: center;
-    /* display: inline-block;  */
 }
 
 .label {
@@ -101,4 +55,46 @@
 
 #count {
     display:inline;
+}
+
+/* how to play bottons */
+.how-rules {
+    background-color: rgb(175, 245, 220);
+    border: 1px solid #860aec;
+    margin: 0 2px 5px;
+}
+
+.how_piano, .how_game {
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(127, 255, 212);
+    align-items: center;
+    /* display: inline-block; */
+    border: 1px solid #4d4d4d;
+    margin: 15px auto;
+    display: block;  
+}
+
+.how_game {
+    margin: 10px auto;
+}
+
+.how-active {
+    background-color: rgba(161, 202, 248, 0.986);
+    border: 1px solid #860aec;  
+}
+
+.play-btn {
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    align-items: center;
+    margin: 15px auto 30px;
+    display: block;
+}
+
+.submit-btn {
+    width: 220px;
+    margin-top: 20px;
 }
