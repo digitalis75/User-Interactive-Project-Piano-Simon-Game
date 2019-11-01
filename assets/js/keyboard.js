@@ -2,7 +2,7 @@ var id;
 var color;
 
 var keyId = ["c", "c-sharp", "d", "d-sharp", "e", "f", "f-sharp", "g", "g-sharp", "a", "a-sharp", "h", "c1", "c1-sharp", "d1", "d1-sharp"];
-var keySound =["audio/C.wav", "audio/C_s.wav", "audio/D.wav", "audio/D_s.wav", "audio/E.wav", "audio/F.wav", "audio/F_s.wav", "audio/G.wav", "audio/G_s.wav", "audio/A.wav", "audio/Bb.wav", "audio/B.wav", "audio/C1.wav", "audio/C_s1.wav", "audio/D1.wav"];
+var keySound =["assets/audio/C.wav", "assets/audio/C_s.wav", "assets/audio/D.wav", "assets/audio/D_s.wav", "assets/audio/E.wav", "assets/audio/F.wav", "assets/audio/F_s.wav", "assets/audio/G.wav", "assets/audio/G_s.wav", "assets/audio/A.wav", "assets/audio/Bb.wav", "assets/audio/B.wav", "assets/audio/C1.wav", "assets/audio/C_s1.wav", "assets/audio/D1.wav"];
 
 //PLAYS KEYBOARD
 $(document).ready(function(){

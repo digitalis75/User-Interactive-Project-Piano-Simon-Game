@@ -8,7 +8,7 @@ var i, on, off, gameInterval;
 const num_of_levels = 5;
 
 var keyId = ["c", "c-sharp", "d", "d-sharp", "e", "f", "f-sharp", "g", "g-sharp", "a", "a-sharp", "h", "c1", "c1-sharp", "d1", "d1-sharp"];
-var keySound = ["audio/C.wav", "audio/C_s.wav", "audio/D.wav", "audio/D_s.wav", "audio/E.wav", "audio/F.wav", "audio/F_s.wav", "audio/G.wav", "audio/G_s.wav", "audio/A.wav", "audio/Bb.wav", "audio/B.wav", "audio/C1.wav", "audio/C_s1.wav", "audio/D1.wav"];
+var keySound =["assets/audio/C.wav", "assets/audio/C_s.wav", "assets/audio/D.wav", "assets/audio/D_s.wav", "assets/audio/E.wav", "assets/audio/F.wav", "assets/audio/F_s.wav", "assets/audio/G.wav", "assets/audio/G_s.wav", "assets/audio/A.wav", "assets/audio/Bb.wav", "assets/audio/B.wav", "assets/audio/C1.wav", "assets/audio/C_s1.wav", "assets/audio/D1.wav"];
 
 var play_c = new Audio(keySound[0]);
 var play_c_sharp = new Audio(keySound[1]);
@@ -26,8 +26,8 @@ var play_c1 = new Audio(keySound[12]);
 var play_c1_sharp = new Audio(keySound[13]);
 var play_d1 = new Audio(keySound[14]);
 
-var error = new Audio("audio/beep-03.mp3");
-var winner = new Audio("audio/happykids.mp3");
+var error = new Audio("assets/audio/beep-03.mp3");
+var winner = new Audio("assets/audio/happykids.mp3");
 
 //game's function
 function change1() {
