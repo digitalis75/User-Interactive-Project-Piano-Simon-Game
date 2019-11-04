@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/switch.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
 
     
 </head>
@@ -36,17 +36,22 @@
         </header>
 <!-- heading -->
         <div class = "container">
-            <h1 class = "heading d-flex align-items-center justify-content-center">Play Game</h2>
+            <h1 class = "heading d-flex align-items-center justify-content-center">Play Game</h1>
         </div>              
-            <!-- switches    -->
+            <!-- buttons    -->
         <div class="container-fluid text-center switch-bar">
-            <div class = 'row'>             
-                <div class="col-6 col-md-7">
+            <div class = 'row'>                    
+                <div class="col-4 col-md-3">
+                    <div class="power">
+                        <button type="button" class="restart-btn faded-green"><i class="icon fas fa-redo-alt"></i>Restart</button>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6">
                     <div class="power">
                         <button type="button" class="start-btn faded-green">Start Game</button>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-4 col-md-3">
                     <div class="power">
                         <div class="level gold"><span class="label">Level</span><form id="count">  </form></div>                               
                     </div>
@@ -82,22 +87,25 @@
                         How to Play Game
                     </button>            
                     <div class="collapse" id="collapseExample">
-                        <div class="card card-body how-rules">
+                        <div class="card card-body how-rules"> 
                             <ol>
-                                <li>To play the game click the 'Start' button. The 'Start' button will change colour to green.
-                                    <br>The 'Level' button will indicate beginning of the level one.
-                                    <br><img class = 'start-img' src='assets/images/start-game-active.png'><img class = 'start-img' src='assets/images/level.png'>    
+                                <li>To play a game click the 'Start' button.
+                                    <br><img class = 'start-img' src='assets/images/start-game.png' alt ='Start game button'> 
+                                    <br>Two other buttons will appear in place of "Start" button: the "Restart" and "Level 1" buttons.
+                                    <br>The "Restart" button allows to restart the game. The 'Level' button indicates beginning of the level one. 
+                                    <br><img class = 'start-img' src='assets/images/restart.png' alt = 'Restart button'><img class = 'start-img' src='assets/images/level1.png' alt = 'Level 1 button'>   
                                 </li>
                                 <li>The randomly picked sequence of keys will flash and play sound at the same time. The user will have to repeat the patten of shown keys.
                                     <br>If the keys are correct, the level will increase by one and an additional key will be added to sequence.  
                                     <br>
                                     <br> But if the user clicks the wrong key in a sequence, the user will hear a beeping sound and the number in the level box will change to a triple exclamation mark.
-                                    <br><img class = 'level-img' src='assets/images/warning.png'>
+                                    <br><img class = 'level-img' src='assets/images/warning.png' alt = 'Warning button'>
                                     <br>The series of keys will be played again until user successfully repeat the pattern of keys and level up.
                                 </li>
                                 <li>
-                                    When the user reaches Level 20, the message 'YOU WON!!!' will appear in a level box and a cheering sound will be played. After that the game will reload.
-                                    <br><img class = 'level-img' src='assets/images/you-won.png'>
+                                    When the user reaches Level 20, the message 'YOU WON!!!' will appear in a level box and a cheering sound will be played.
+                                    <br><img class = 'level-img' src='assets/images/you-won.png' alt = 'You won button'>
+                                    <br>After that the game will reload.
                                 </li>
                             </ol> 
                         </div>

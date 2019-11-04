@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700|Audiowide:100,200,300,400,500,600,700 &display=swap');
 
-
 body {
     background-color: aquamarine;
     height: 100%;
@@ -12,7 +11,7 @@ body {
 }
 
 
-.col-12{
+.col, .col-3, .col-4, .col-6, .col-12 {
     margin: 0;
     padding: 0;
 }
@@ -71,7 +70,6 @@ body {
     border: 2px solid #fff;
     border-radius: 15px;
     margin: 15px 10px;
-
 }
   
 .openbtn:hover {
@@ -91,13 +89,7 @@ body {
 
 /*----------form---------------*/
 
-/* .contact-header {
-    height: 120px;
-    font-weight: 500;
-    color: rgb(8, 151, 130);
-} */
-
-form {
+.form {
     margin: 20px;
 }
 
@@ -131,7 +123,7 @@ form {
     width: 80%;
 }
 
-/* keyboard */
+/*---- keyboard ------- */
 .keyWhite{
     width: 7vw;
     height: 30vw;
@@ -186,10 +178,8 @@ form {
     width: 4vw;
     height: 20vw;
     z-index: 1;
-  
     margin-top: 5vh;
     margin-left: -58vw;
-
     background-color: #000;
     border: 1px solid #000;
     border-radius: 0 0 10px 10px;
@@ -281,6 +271,17 @@ form {
     padding: 0;
 }
 
+.validator {
+    background-color: rgb(8, 151, 130);
+    text-align: right;
+    margin: 0;
+    padding: 0; 
+}
+
+.css-val {
+    margin: 0;
+}
+
 .links a,
 .social-links a {
     text-decoration: none;
@@ -301,4 +302,3 @@ form {
 .social-links a {
     color: #fff;
 }
-

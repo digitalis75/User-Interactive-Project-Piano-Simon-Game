@@ -1,14 +1,16 @@
 var random = [];
-var gameSeq = []; 
+var gameSeq = [];
 var userSeq = [];
 var j = 0;
 var count = 1;
-var color, id;
-var i, on, off, gameInterval;
+var i;
+var on;
+var off;
+var gameInterval;
 const num_of_levels = 5;
 
 var keyId = ["c", "c-sharp", "d", "d-sharp", "e", "f", "f-sharp", "g", "g-sharp", "a", "a-sharp", "h", "c1", "c1-sharp", "d1", "d1-sharp"];
-var keySound =["assets/audio/C.wav", "assets/audio/C_s.wav", "assets/audio/D.wav", "assets/audio/D_s.wav", "assets/audio/E.wav", "assets/audio/F.wav", "assets/audio/F_s.wav", "assets/audio/G.wav", "assets/audio/G_s.wav", "assets/audio/A.wav", "assets/audio/Bb.wav", "assets/audio/B.wav", "assets/audio/C1.wav", "assets/audio/C_s1.wav", "assets/audio/D1.wav"];
+var keySound = ["assets/audio/C.wav", "assets/audio/C_s.wav", "assets/audio/D.wav", "assets/audio/D_s.wav", "assets/audio/E.wav", "assets/audio/F.wav", "assets/audio/F_s.wav", "assets/audio/G.wav", "assets/audio/G_s.wav", "assets/audio/A.wav", "assets/audio/Bb.wav", "assets/audio/B.wav", "assets/audio/C1.wav", "assets/audio/C_s1.wav", "assets/audio/D1.wav"];
 
 var play_c = new Audio(keySound[0]);
 var play_c_sharp = new Audio(keySound[1]);
@@ -30,7 +32,7 @@ var error = new Audio("assets/audio/beep-03.mp3");
 var winner = new Audio("assets/audio/happykids.mp3");
 
 //game's function
-function change1() {
+function game() {
     if (count <=10) {
         off = 400;
         on = 600;
@@ -40,191 +42,152 @@ function change1() {
     }
 
     gameInterval = setInterval(function(){
-        if (random[j] == 1) {
-            $('#c').addClass('key-c-active');
+        if (random[j] === 1) {
+            $("#c").addClass("key-c-active");
             play_c.currentTime = 0;
             play_c.play();
-
             gameSeq.push(1);
-
             setTimeout(function() {
-                $('#c').removeClass('key-c-active');
+                $("#c").removeClass("key-c-active");
             },off);
-            
-         
         }
-        else if (random[j] == 2) {
-            $('#c-sharp').addClass('key-black-active');
+        else if (random[j] === 2) {
+            $("#c-sharp").addClass("key-black-active");
             play_c_sharp.currentTime = 0;
             play_c_sharp.play();
-
             gameSeq.push(2);
-    
             setTimeout(function() {
-                $('#c-sharp').removeClass('key-black-active');
+                $("#c-sharp").removeClass("key-black-active");
             },off);
-   
         }
-
-        else if (random[j] == 3) {
-            $('#d').addClass('key-d-active');
+        else if (random[j] === 3) {
+            $("#d").addClass("key-d-active");
             play_d.currentTime = 0;
             play_d.play();
             gameSeq.push(3);
-    
             setTimeout(function() {
-                $('#d').removeClass('key-d-active');
+                $("#d").removeClass("key-d-active");
             },off);
-          
         }
-
-        else if (random[j] == 4) {
-            $('#d-sharp').addClass('key-black-active');
+        else if (random[j] === 4) {
+            $("#d-sharp").addClass("key-black-active");
             play_d_sharp.currentTime = 0;
             play_d_sharp.play();
             gameSeq.push(4);
-    
             setTimeout(function() {
-                $('#d-sharp').removeClass('key-black-active');
+                $("#d-sharp").removeClass("key-black-active");
             },off);
-          
         }
-
-        else if (random[j] == 5) {
-            $('#e').addClass('key-e-active');
+        else if (random[j] === 5) {
+            $("#e").addClass("key-e-active");
             play_e.currentTime = 0;
             play_e.play();
             gameSeq.push(5);
-    
             setTimeout(function() {
-                $('#e').removeClass('key-e-active');
+                $("#e").removeClass("key-e-active");
             },off);
-           
         }
-
-        else if (random[j] == 6) {
-            $('#f').addClass('key-f-active');
+        else if (random[j] === 6) {
+            $("#f").addClass("key-f-active");
             play_f.currentTime = 0;
             play_f.play();
             gameSeq.push(6);
-    
             setTimeout(function() {
-                $('#f').removeClass('key-f-active');
+                $("#f").removeClass("key-f-active");
             },off);
-           
         }
-
-        else if (random[j] == 7) {
-            $('#f-sharp').addClass('key-black-active');
+        else if (random[j] === 7) {
+            $("#f-sharp").addClass("key-black-active");
             play_f_sharp.currentTime = 0;
             play_f_sharp.play();
             gameSeq.push(7);
-    
             setTimeout(function() {
-                $('#f-sharp').removeClass('key-black-active');
+                $("#f-sharp").removeClass("key-black-active");
             },off);
-          
         }
-
-        else if (random[j] == 8) {
-            $('#g').addClass('key-g-active');
+        else if (random[j] === 8) {
+            $("#g").addClass("key-g-active");
             play_g.currentTime = 0;
             play_g.play();
             gameSeq.push(8);
-    
             setTimeout(function() {
-                $('#g').removeClass('key-g-active');
+                $("#g").removeClass("key-g-active");
             },off);
         }
-
-        else if (random[j] == 9) {
-            $('#g-sharp').addClass('key-black-active');
+        else if (random[j] === 9) {
+            $("#g-sharp").addClass("key-black-active");
             play_g_sharp.currentTime = 0;
             play_g_sharp.play();
             gameSeq.push(9);
-    
             setTimeout(function() {
-                $('#g-sharp').removeClass('key-black-active');
+                $("#g-sharp").removeClass("key-black-active");
             },off);
         }
-
-        else if (random[j] == 10) {
-            $('#a').addClass('key-a-active');
+        else if (random[j] === 10) {
+            $("#a").addClass("key-a-active");
             play_a.currentTime = 0;
             play_a.play();
             gameSeq.push(10);
-    
             setTimeout(function() {
-                $('#a').removeClass('key-a-active');
+                $("#a").removeClass("key-a-active");
             },off);
         }
-
-        else if (random[j] == 11) {
-            $('#a-sharp').addClass('key-black-active');
+        else if (random[j] === 11) {
+            $("#a-sharp").addClass("key-black-active");
             play_a_sharp.currentTime = 0;
             play_a_sharp.play();
             gameSeq.push(11);
-    
             setTimeout(function() {
-                $('#a-sharp').removeClass('key-black-active');
+                $("#a-sharp").removeClass("key-black-active");
             },off);
         }
-
-        else if (random[j] == 12) {
-            $('#h').addClass('key-h-active');
+        else if (random[j] === 12) {
+            $("#h").addClass("key-h-active");
             play_h.currentTime = 0;
             play_h.play();
             gameSeq.push(12);
-    
             setTimeout(function() {
-                $('#h').removeClass('key-h-active');
+                $("#h").removeClass("key-h-active");
             },off);
         }
-
-        else if (random[j] == 13) {
-            $('#c1').addClass('key-c1-active');
+        else if (random[j] === 13) {
+            $("#c1").addClass("key-c1-active");
             play_c.currentTime = 0;
             play_c1.play();
             gameSeq.push(13);
-    
             setTimeout(function() {
-                $('#c1').removeClass('key-c1-active');
+                $("#c1").removeClass("key-c1-active");
             },off);
         }
-
-        else if (random[j] == 14) {
-            $('#c1-sharp').addClass('key-black-active');
+        else if (random[j] === 14) {
+            $("#c1-sharp").addClass("key-black-active");
             play_c1_sharp.currentTime = 0;
             play_c1_sharp.play();
             gameSeq.push(14);
-    
             setTimeout(function() {
-                $('#c1-sharp').removeClass('key-black-active');
-            },off);       
+                $("#c1-sharp").removeClass("key-black-active");
+            },off);
         }
-
         else{
-            $('#d1').addClass('key-d1-active');
+            $("#d1").addClass("key-d1-active");
             play_d1.currentTime = 0;
             play_d1.play();
             gameSeq.push(15);
-    
             setTimeout(function() {
-                $('#d1').removeClass('key-d1-active');
+                $("#d1").removeClass("key-d1-active");
             },off);
         }
-    
-        j++;     
+        j++;
         if (j>=count) {
-            clearInterval(gameInterval);  
+         clearInterval(gameInterval);
         }
     }, on);
 }
 
 function checking() {
-    if (gameSeq.length == userSeq.length) {
-        if (gameSeq.join() == userSeq.join()){
-            if(count == num_of_levels) {
+    if (gameSeq.length === userSeq.length) {
+        if (gameSeq.join() === userSeq.join()){
+            if(count === num_of_levels) {
                 setTimeout (function () {
                     $(".label").text("YOU WON");
                     $("#count").text("!!!");
@@ -235,55 +198,60 @@ function checking() {
                }, 5000);
             }else {
                 setTimeout (function () {
-                    $('#count').text (count + 1);
+                    $("#count").text (count + 1);
+                    $(".label").text("Level");
                     count++;
                     gameSeq = [];
                     userSeq = [];
                     j = 0;
-                    change1();
+                    game();
                 }, 500);
             }
         }else {
             setTimeout (function () {
-                $('#count').text('!!!');
+                $(".label").text("");
+                $("#count").text("!!!");
                 error.play();
-
                 gameSeq = [];
                 userSeq = [];
                 j = 0;
-                change1();
+                game();
             }, 1000);
-        }  
+        }
     }
 }
 
 $(document).ready(function(){
-    $('#count').text('--');
+    $(".restart-btn").hide();
+    $(".level").hide();
 });
 
+$(document).ready(function(){
+    $(".restart-btn").click(function(){
+        location.reload();
+    });
+});
 
 //start botton
-$(document).ready(function(){   
-    $('.start-btn').click(function(){
-        $('.start-btn').removeClass('faded-green').addClass('green');      
-        $('#count').text(count);
-
+$(document).ready(function(){
+    $(".start-btn").click(function(){
+        $(".start-btn").hide();
+        $(".restart-btn").show();
+        $(".level").show();
+        $("#count").text(count);
         for (i=0; i<20; i++) {
             random[i] = Math.ceil(Math.random()*15);
         }
-
-        change1();
-
-        //user sequence 
-        $(".keyWhite, .keyBlack").click(function(){          
+        game();
+//user sequence
+        $(".keyWhite, .keyBlack").click(function(){
             var key = $(this).attr("id");
             var id = keyId.indexOf(key);
-            color = $(this).attr("class").split(" ")[1];
-            userSeq.push(id +1); 
-            // console.log(key +" " + color);
+            var color = $(this).attr("class").split(" ")[1];
+            userSeq.push(id +1);
             addColorSound(id, color);
             checking();
-        });     
+        });
     });
 });
 

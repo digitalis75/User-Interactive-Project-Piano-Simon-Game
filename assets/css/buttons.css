@@ -1,13 +1,28 @@
+button{
+    margin: 0;
+    padding: 0;
+}
+
 .start-btn {
-    width: 150px;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #4d4d4d;
+    margin: 0px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.restart-btn {
+    width: 100px;
     height: 35px;
     border: 1px solid #4d4d4d;
     margin: 0 20px;
+    padding: 0;
     cursor: pointer;
 }
 
 .level {
-    width: 110px;
+    width: 115px;
     height: 35px;
     border-radius: 10px;
     border: 1px solid #4d4d4d;
@@ -22,12 +37,6 @@
     background-color: green;
     border: 1px solid green;
     opacity: 0.5;
-}
-
-.green {
-    color: #fff;
-    background-color: green;
-    border: 1px solid green;
 }
 
 .gold {
@@ -55,6 +64,7 @@
 
 #count {
     display:inline;
+    margin: 5px;
 }
 
 /* how to play bottons */

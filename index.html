@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/switch.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
 
     
 </head>
@@ -37,7 +37,7 @@
         </header>
         <!-- heading -->
         <div class = "container">
-            <h1 class = "heading d-flex align-items-center justify-content-center">Play Piano</h2>
+            <h1 class = "heading d-flex align-items-center justify-content-center">Play Piano</h1>
         </div>
         <!-- keyboard -->
         <div class="container-fluid keyboard">
@@ -64,16 +64,13 @@
         <div class = 'container-fluid'>
             <div class = 'row'>
                 <div class = 'col-12'>
-                    <button class="how_piano" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="how_piano" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         How to Play Keyboard
                     </button>
 
-                    <div class="collapse" id="collapseExample1">
+                    <div class="collapse" id="collapseExample">
                         <div class="card card-body how-rules">
                             <ol>
-                                <li>The 'MODE' switch will stay in 'Piano' position by default. 
-                                    <br><img class = 'power-img' src='assets/images/mode-piano.png'>
-                                </li>
                                 <li>To play keyboard click the piano keys with a mouse or tap on touch-screens.</li>
                             </ol>                         
                         </div>
@@ -90,12 +87,12 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 ">
+                <div class="col-12">
                     <ul class="list-inline links">
-                            <li class="list-inline-item"><a href="index.html"><span>Piano</span></a></li>
-                            <li class="list-inline-item"><a href="game.html"><span>Game</span></a></li>
-                            <li class="list-inline-item"><a href="about.html"><span>About</span></a></li>                            
-                            <li class="list-inline-item"><a href="contact.html"><span>Contact</span></a></li>
+                        <li class="list-inline-item"><a href="index.html"><span>Piano</span></a></li>
+                        <li class="list-inline-item"><a href="game.html"><span>Game</span></a></li>
+                        <li class="list-inline-item"><a href="about.html"><span>About</span></a></li>                            
+                        <li class="list-inline-item"><a href="contact.html"><span>Contact</span></a></li>
                     </ul>
                 </div>
                 <div class="col-12">
@@ -120,6 +117,17 @@
                         </li>
                     </ul>
                 </div>
+                <div class = "col-12 list-inline validator">
+                    <!-- <div class = "row"> -->
+                        <p class = "css-val">
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                alt="Valid CSS!" />
+                        </a>
+                        </p>
+                    <!-- </div> -->
+                </div>
             </div>
         </div>
     </footer>
@@ -129,5 +137,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/keyboard.js"></script>
     <script src="assets/js/page.js"></script>
+
 </body>
 </html>
