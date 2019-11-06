@@ -12,6 +12,10 @@ button{
     cursor: pointer;
 }
 
+.start-btn:hover {
+background-color: rgb(2, 102, 2);
+}
+
 .restart-btn {
     width: 100px;
     height: 35px;
@@ -78,12 +82,17 @@ button{
     height: 40px;
     width: 250px;
     border-radius: 10px;
-    background-color: rgb(127, 255, 212);
+    background-color: aquamarine;
+    color: #000;
     align-items: center;
     /* display: inline-block; */
-    border: 1px solid #4d4d4d;
+    border: 1px solid rgb(105, 104, 104);
     margin: 15px auto;
     display: block;  
+}
+
+.how_piano:hover, .how_game:hover {
+    background-color: rgb(95, 250, 198); 
 }
 
 .how_game {
@@ -107,4 +116,10 @@ button{
 .submit-btn {
     width: 220px;
     margin-top: 20px;
+}
+
+@media screen and (max-width:576px) {
+    .play-btn, .how_piano, .how_game {
+        width: 180px;
+    }
 }
