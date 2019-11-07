@@ -116,7 +116,7 @@ body {
 }
 
 .jumbotron-home {
-    margin: 20vh auto;
+    margin: 50px auto 20px;
     width: 80%;
     background-color: rgb(82, 219, 171);  
 }
@@ -131,6 +131,9 @@ body {
 /* front page */
 
 .front-page {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-image: url("../images/hands-up1.png"); 
     background-repeat: no-repeat;
     background-position: center center;
