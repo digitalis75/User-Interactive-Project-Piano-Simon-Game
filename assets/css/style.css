@@ -132,8 +132,6 @@ body {
 
 .front-page {
     height: 100%;
-    margin: 0;
-    padding: 0;
     background-image: url("../images/hands-up1.png"); 
     background-repeat: no-repeat;
     background-position: center center;
