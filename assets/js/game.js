@@ -7,7 +7,7 @@ var i;
 var on;
 var off;
 var gameInterval;
-const num_of_levels = 5;
+const num_of_levels = 20;
 
 var keyId = ["c", "c-sharp", "d", "d-sharp", "e", "f", "f-sharp", "g", "g-sharp", "a", "a-sharp", "h", "c1", "c1-sharp", "d1", "d1-sharp"];
 var keySound = ["assets/audio/C.wav", "assets/audio/C_s.wav", "assets/audio/D.wav", "assets/audio/D_s.wav", "assets/audio/E.wav", "assets/audio/F.wav", "assets/audio/F_s.wav", "assets/audio/G.wav", "assets/audio/G_s.wav", "assets/audio/A.wav", "assets/audio/Bb.wav", "assets/audio/B.wav", "assets/audio/C1.wav", "assets/audio/C_s1.wav", "assets/audio/D1.wav"];
