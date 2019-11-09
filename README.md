@@ -34,7 +34,7 @@ This website target audiences are those who wish to play piano and learn basic n
   * The user presented with contact form.
   * If the user wants to contact website creator the user can complete the form by filling in all the required fields and pressing  !["Send email"](assets/images/send-email.png) button.
   
-  * Alert box with message "Thanks! Your email has been sent!" will appear on a screen.
+  * Alert box with a message "Thanks! Your email has been sent!" will appear on a screen.
 
 ## Wireframes
 Wireframes are created in Balsamiq Cloud.
@@ -56,6 +56,7 @@ Check wireframes for mobile devices: [index.html](assets/wireframes/index_html_m
 * Mobile-ready version - Responsive website design;
 * Social media integration.  There are Icons/links in the Footer to social media accounts of the website creator.
 
+* In a game mode user have to successfully pass 20 levels to win the game. I think game will benefit     from integrating a drop-down menu for choosing a level of difficulty: easy - 5 levels, intermediate - 10 levels, hard - 15 levels, advanced - 20 levels. 
 
 #### Features Left to Implement
 
@@ -94,10 +95,15 @@ Check wireframes for mobile devices: [index.html](assets/wireframes/index_html_m
 **Navigation Links in Footer** | <ul><li>Click "Home"</li><li>Click "Piano"</li><li>Click "Game"</li><li>Click "Contact"</li></ul> | <ul><li>Should open index.html</li><li>Should open piano.html</li><li>Should open game.html</li><li>Should open contact.html</li></ul> | <ul><li>*Yes*</li><li>*Yes*</li><li>*Yes*</li><li>*Yes*</li></ul> |
 ![](assets/images/send-email.png) | Click "Send email" button | Alert box with message "Thanks! Your email has been sent!" should appear on a screen.  | *Yes* | 
 
+The website was tested on a laptop, android and ios mobile devices that include phones, tablet and ipad. 
+
+During the testing of the website hosted on GitHub Pages, there was a problem when playing of sounds was delayed, which badly effected use of the game and the keyboard. I think its due to internet connection, because sounds didn't delay when website was open from local editor. 
 
 ## Deployment
 
-This project was edited in Visual Studio Code, pushed from AWS Cloud9 and stored in GitHub repository. To deploy a website to the public Internet we are using GitHub's free service called GitHub Pages.
+This project was edited in Visual Studio Code on a local device. To preview website in VS Code - right click inside html file and choose "Open in default browser". Preview README.md press Ctrl + Shift + V.
+
+The code was copied from Visual Studio Code to AWS Cloud9,pushed from there and stored in GitHub repository. To deploy a website to the public Internet we are using GitHub's free service called GitHub Pages.
 Deployment of the website was done from GitHub repository of the project by clicking the "Settings" and choosing "master branch" from the dropdown menu in "Source" section within "GitHub Pages" section.  
 [Click to view website.](https://digitalis75.github.io/User-Interactive-Project-Piano-Simon-Game/).  
  The website is automatically updated with every change in repository. 
