@@ -32,8 +32,17 @@ This website target audiences are those who wish to play piano and learn basic n
 
 **3. Contact**
   * The user presented with contact form.
-  * If the user wants to contact website creator user can complete the form by filling in all the required fields and pressing  !["Send now"](assets/images/send-now.png) button.
-    
+  * If the user wants to contact website creator the user can complete the form by filling in all the required fields and pressing  !["Send email"](assets/images/send-email.png) button.
+  
+  * Alert box with message "Thanks! Your email has been sent!" will appear on a screen.
+
+## Wireframes
+Wireframes are created in Balsamiq Cloud.
+
+Check wireframes for desktop: [index.html](assets/wireframes/index_html_desktop.png), [piano.html](assets/wireframes/piano_html_desktop1.png), [game.html](assets/wireframes/game_html_desktop1.png), [contact.html](assets/wireframes/contact_html_desktop1.png).
+
+Check wireframes for mobile devices: [index.html](assets/wireframes/index_html_mobile.png), [piano.html](assets/wireframes/piano_html_mobile.png), [game.html](assets/wireframes/game_html_mobile.png), [contact.html](assets/wireframes/contact_html_mobile.png).
+
 ## Features
 
 #### Existing Features
@@ -67,26 +76,43 @@ This website target audiences are those who wish to play piano and learn basic n
 * The CSS code was checked with online validator: (https://jigsaw.w3.org/css-validator/#validate_by_input);
 * The Javascript code was checked with online validators: (https://www.jslint.com/), (https://jshint.com/);
 * Responsiveness was checked with online validator: (https://www.responsinator.com/);
-* The Chrome Developer Tools was used to check website for responsiveness and its console to check Javascript. 
+* The Chrome Developer Tools was used to check website for responsiveness and its console to check Javascript.
+
+
+| Test               | Input              | Expected Output    |Pass    |  
+| --------------     | ----------------- | ------------------- | :--------:|
+|![](assets/images/play-game.png) | Click "Play Game" button | Should open game.html page | *Yes* |
+|![](assets/images/play-piano.png) | Click "Play Piano" button | Should open piano.html page | *Yes* |  
+|![](assets/images/start-game.png) | Click "Start Game" button | User should be able to start the game | *Yes* |  
+|![](assets/images/restart.png) | Click "Restart" button | User should be able to refresh the page where game can be started again | *Yes* |
+|![](assets/images/how-game.png) | Click "How to play Game" button | Should open a manual on how to play game. On second click manual should close.  |  *Yes* |
+|![](assets/images/how-piano.png) | Click "How to play Keyboard" button | Should open a manual on how to play piano keyboard. On second click manual should close. | *Yes* |
+|![](assets/images/menu-botton.png) | Click navbar collapsed menu button | Should open dropdown menu with a list of links to pages. | *Yes* |
+|![](assets/images/cross-botton.png) | Click cross button | Should close dropdown menu. | *Yes* |
+|![](assets/images/dropdown-menu.png) |  <ul><li>Click "Home"</li><li>Click "Piano"</li><li>Click "Game"</li><li>Click "Contact"</li></ul> | <ul><li>Should open index.html</li><li>Should open piano.html</li><li>Should open game.html</li><li>Should open contact.html</li></ul> | <ul><li>*Yes*</li><li>*Yes*</li><li>*Yes*</li><li>*Yes*</li></ul> |
+**Piano keys** | Click on any piano key | <ul><li>User should be able to see a key colour flash</li><li>User should be able to hear sound</li> | <ul><li>*Yes*</li><li>*Yes*</li></ul> | 
+**Navigation Links in Footer** | <ul><li>Click "Home"</li><li>Click "Piano"</li><li>Click "Game"</li><li>Click "Contact"</li></ul> | <ul><li>Should open index.html</li><li>Should open piano.html</li><li>Should open game.html</li><li>Should open contact.html</li></ul> | <ul><li>*Yes*</li><li>*Yes*</li><li>*Yes*</li><li>*Yes*</li></ul> |
+![](assets/images/send-email.png) | Click "Send email" button | Alert box with message "Thanks! Your email has been sent!" should appear on a screen.  | *Yes* | 
 
 
 ## Deployment
 
-This project was addited in Visual Studio Code, pushed from AWS Cloud9 and stored in GitHub repository. To deploy a website to the public Internet we are using GitHub's free service called GitHub Pages.
+This project was edited in Visual Studio Code, pushed from AWS Cloud9 and stored in GitHub repository. To deploy a website to the public Internet we are using GitHub's free service called GitHub Pages.
 Deployment of the website was done from GitHub repository of the project by clicking the "Settings" and choosing "master branch" from the dropdown menu in "Source" section within "GitHub Pages" section.  
 [Click to view website.](https://digitalis75.github.io/User-Interactive-Project-Piano-Simon-Game/).  
- The website get automatically updated with every change in repository. 
+ The website is automatically updated with every change in repository. 
 
 ## Credit
 
 #### Content
 * [Google fonts](https://fonts.google.com/?category=Serif&query=roboto);  
 * [Font Awesome](https://fontawesome.com/);
+* [EmailJS](https://www.emailjs.com/)
 
 #### Code
 * Header dropdown menu: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp;
 * Canvas: https://www.w3resource.com/html5-canvas/html5-canvas-gradients-patterns.php, https://www.w3schools.com/html/html5_canvas.asp;
-* How to play buttons:
+* How to play buttons: https://getbootstrap.com/docs/4.3/components/collapse/
 * Keyboard: https://www.youtube.com/watch?v=Cxz8kj3U6PQ&t=118s;
 * Game: https://www.youtube.com/watch?v=4pfvy_A5ceE, https://www.youtube.com/watch?v=9MTR3V2XpRI, https://www.youtube.com/watch?v=iXscqYgZ7HQ&t=621s;
 
@@ -103,4 +129,5 @@ Background image: https://www.shutterstock.com/image-vector/vector-background-co
 * Video tutorials of Code Institute and examples of introduced code;
 * HTML, CSS, Bootstrap4, JavaScript, jQuery tutorials at [w3schools.com](https://w3schools.com/);  
 * [Bootstrap Documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/);
+* [EmailJS Documentation](https://www.emailjs.com/docs/)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet);

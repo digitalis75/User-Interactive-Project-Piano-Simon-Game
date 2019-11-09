@@ -96,7 +96,7 @@ background-color: rgb(2, 102, 2);
 }
 
 .how_game {
-    margin: 10px auto;
+    margin-bottom: 30px;
 }
 
 .how-active {
@@ -109,13 +109,17 @@ background-color: rgb(2, 102, 2);
     width: 250px;
     border-radius: 10px;
     align-items: center;
-    margin: 15px auto 30px;
+    margin: 15px auto;
     display: block;
 }
 
 .submit-btn {
     width: 220px;
     margin-top: 20px;
+}
+
+.submitted {
+    background-color: #00a2ff;
 }
 
 @media screen and (max-width:576px) {
